@@ -7,7 +7,7 @@ provider "aws" {
 # S3 remote terraform state:
 terraform {
   backend "s3" {
-    bucket = "sary-terraform-state"
+    bucket = "terraform-state"
     region = "me-south-1"
     key    = "terraform/postgres/terraform.tfstate"
   }
